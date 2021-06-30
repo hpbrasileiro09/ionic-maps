@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Hpbrasileiro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div #map id="map"></div>
+</ion-content>
+
+<ion-footer>
+  <p><strong>Jetson are you fired!</strong></p>
+  <ion-button (click)="showAlert()" color="primary">Push me!</ion-button>
+  <span>{{ nome }}</span>
+  <ion-button [routerLink]="['/about']">About</ion-button>
+</ion-footer>
+
